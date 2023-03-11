@@ -3,7 +3,7 @@ use std::future::Future;
 use std::str::Utf8Error;
 use zeroize::*;
 
-#[derive(Zeroize, ZeroizeOnDrop, Eq, PartialEq, Default)]
+#[derive(Zeroize, Eq, PartialEq, Default)]
 pub struct SecretValue(Vec<u8>);
 
 impl SecretValue {
